@@ -5,4 +5,4 @@ add 111111111111111111111111111
 add 22222222
 add 1111111111111111111111111122221
 add 2222
-![Image text](flowChart.png)
+![Image text](https://github.com/liuaibin/gitUseTest/blob/bil-dev/%20flowChart.png?raw=true)
