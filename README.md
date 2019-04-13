@@ -12,7 +12,9 @@ game模块主要功能：（1）拉取房间列表，随机选取可以进入的
 1.配置状态机配置文件，默认包含全部状态。
 状态机配置：config目录 ezStates.json
 例子：
-"Logout": {
+<pre>
+    <code>
+    "Logout": {
     "name":"Logout", //当前状态的名字，一定要和当前状态key一样。
     "delay":[0,5],   //当前状态切换到下个状态的等待时间范围。
     "nextState": [
@@ -26,32 +28,35 @@ game模块主要功能：（1）拉取房间列表，随机选取可以进入的
       }
     ]
   }
+    </code>
+</pre>
+
 2.配置状态机配置文件，默认包含全部状态。
 基本配置： config目录 initConfig.json
 例子：
-{
-  "address":"127.0.0.1",   //服务器的ip
-  "port":20200,            //服务器的端口
-  "openIdMin":9000020000,  //机器人的openId的起始
-  "openIdMax":9000040000,  //机器人的openId的结束
-  "clientType":{           //连接类型
+<pre>
+    <code>
+    {
+    "address":"127.0.0.1",   //服务器的ip
+    "port":20200,            //服务器的端口
+    "openIdMin":9000020000,  //机器人的openId的起始
+    "openIdMax":9000040000,  //机器人的openId的结束
+    "clientType":{           //连接类型
     "type":[
       "tcp",
       "websocket"],
     "weight":[            //连接类型权重
       10,
       0
-    ]
-  },
-  "clientNum":100,        //默认客户端的数量
-  "agentId":0             //默认的进程id
+      ]
+   },
+   "clientNum":100,        //默认客户端的数量
+   "agentId":0             //默认的进程id
 }
+    </code>
+</pre>
 使用流程：
 1.修改启动脚本：node ../startClient.js -a "进程id" -c "客户端数量" >> /dev/null 2>&1 &   开启多个进程依次累加进程id
 2.开始 => bin目录下 ./start.sh
 3.结束 => bin目录下 ./kill.sh
-<pre>
-    <code>
-        Whatever code you want to show
-    </code>
-</pre>
+
