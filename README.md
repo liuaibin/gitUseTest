@@ -12,7 +12,6 @@ game模块主要功能：（1）拉取房间列表，随机选取可以进入的
 1.配置状态机配置文件，默认包含全部状态。
 状态机配置：config目录 ezStates.json
 例子：
-‘’‘
 "Logout": {
     "name":"Logout", //当前状态的名字，一定要和当前状态key一样。
     "delay":[0,5],   //当前状态切换到下个状态的等待时间范围。
@@ -27,7 +26,6 @@ game模块主要功能：（1）拉取房间列表，随机选取可以进入的
       }
     ]
   }
-’‘’
 2.配置状态机配置文件，默认包含全部状态。
 基本配置： config目录 initConfig.json
 例子：
@@ -40,7 +38,7 @@ game模块主要功能：（1）拉取房间列表，随机选取可以进入的
     "type":[
       "tcp",
       "websocket"],
-    "weight":[             //连接类型权重
+    "weight":[            //连接类型权重
       10,
       0
     ]
@@ -52,4 +50,8 @@ game模块主要功能：（1）拉取房间列表，随机选取可以进入的
 1.修改启动脚本：node ../startClient.js -a "进程id" -c "客户端数量" >> /dev/null 2>&1 &   开启多个进程依次累加进程id
 2.开始 => bin目录下 ./start.sh
 3.结束 => bin目录下 ./kill.sh
-
+<pre>
+    <code>
+        Whatever code you want to show
+    </code>
+</pre>
