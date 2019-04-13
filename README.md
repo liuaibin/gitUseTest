@@ -61,6 +61,8 @@ game模块主要功能：（1）拉取房间列表，随机选取可以进入的
 
 使用流程：
 1.修改启动脚本：node ../startClient.js -a "进程id" -c "客户端数量" >> /dev/null 2>&1 &   开启多个进程依次累加进程id
+
 2.开始 => bin目录下 ./start.sh
+
 3.结束 => bin目录下 ./kill.sh
 
