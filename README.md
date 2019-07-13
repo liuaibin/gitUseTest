@@ -67,3 +67,8 @@ game模块主要功能：（1）拉取房间列表，随机选取可以进入的
 
 3.结束 => bin目录下 ./kill.sh
 yteiiuiuhfs
+# readme test
+## 1.1二级标题
+this is a test!
+## 1.2二级标题
+this is a test!
