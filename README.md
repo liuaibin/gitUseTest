@@ -66,4 +66,4 @@ game模块主要功能：（1）拉取房间列表，随机选取可以进入的
 2.开始 => bin目录下 ./start.sh
 
 3.结束 => bin目录下 ./kill.sh
-
+yteiiuiuhfs
